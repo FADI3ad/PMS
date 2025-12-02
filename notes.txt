@@ -1,0 +1,24 @@
+project-root/
+├── config/                   # Configuration files
+│   ├── database.php          # Database settings
+│   ├── app.php              # App-wide settings
+│   └── routes.php           # Route definitions
+├── public/                   # Publicly accessible files
+│   ├── index.php            # Application entry point
+│   ├── .htaccess            # URL rewriting (Apache)
+│   └── assets/              # CSS, JS, images
+├── src/                      # Core application logic
+│   ├── Controllers/         # HTTP request handlers
+│   ├── Models/              # Data entities
+│   ├── Services/            # Business logic
+│   ├── Repositories/        # Data access layer
+│   ├── Middleware/          # Request/response middleware
+│   └── Utils/               # Helper functions
+├── tests/                    # Unit and integration tests
+│   ├── Unit/                # Unit tests
+│   └── Integration/         # Integration tests
+├── vendor/                   # Composer dependencies
+├── .env                      # Environment variables
+├── composer.json             # Dependency and autoload config
+├── phpunit.xml               # PHPUnit test config
+└── README.md                 # Project documentation
