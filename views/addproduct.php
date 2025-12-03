@@ -8,7 +8,7 @@
             <div class="col-lg-6">
                 <div class="card border-0 shadow-lg">
                     <div class="card-body p-4">
-                        <form action="/add-product-handler.php" method="POST" enctype="multipart/form-data">
+                        <form action="/add-product" method="POST" enctype="multipart/form-data">
                             <!-- Product Name -->
                             <div class="mb-3">
                                 <label for="productName" class="form-label fw-bold">Product Name</label>

@@ -27,13 +27,18 @@ if ($path === "/") {
 } else if ($path === "/logout") {
     include "../controllers/UserController.php";
     logout();
-} else if ($path === "/add-product") {
+} else if ($path === "/add-product" && $_SERVER['REQUEST_METHOD'] === "GET") {
     include "../middlewares/AdminMiddleware.php";
     if (isAdmin($_SESSION['user']['name'])) {
         include "../views/addproduct.php";
-    }
-    else{
+    } else {
         header("location: /");
     }
-   
+} else if ($path === "/add-product" && $_SERVER['REQUEST_METHOD'] === "POST") {
+    include "../middlewares/AdminMiddleware.php";
+    if (isAdmin($_SESSION['user']['name'])) {
+        include "../controllers/ProductController.php";
+    } else {
+        header("location: /");
+    }
 }

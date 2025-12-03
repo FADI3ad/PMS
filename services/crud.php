@@ -1,16 +1,21 @@
-<?php 
+<?php
 
 
 
 
 
 
-function create($filePath , $data) {
+function create($filePath, $data)
+{
 
-    $file = json_decode(file_get_contents($filePath),true);
+    $file = json_decode(file_get_contents($filePath), true);
 
     $file[] = $data;
-    file_put_contents($filePath,json_encode($file,JSON_PRETTY_PRINT));
+    file_put_contents($filePath, json_encode($file, JSON_PRETTY_PRINT));
+}
 
-
+function json2Array($filePath)
+{
+    $file = json_decode(file_get_contents($filePath), true);
+    return $file;
 }

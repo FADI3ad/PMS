@@ -129,5 +129,17 @@
         "email": "qajywe@mailinator.com",
         "password": "jyjuditu",
         "confirm_password": "jyjuditu"
+    },
+    {
+        "name": "James Delgado",
+        "email": "dekuzoq@mailinator.com",
+        "password": "zyrowati",
+        "confirm_password": "zyrowati"
+    },
+    {
+        "name": "Victoria Mccray",
+        "email": "vywun@mailinator.com",
+        "password": "tejatafe",
+        "confirm_password": "tejatafe"
     }
 ]
